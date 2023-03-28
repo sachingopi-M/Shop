@@ -1,0 +1,58 @@
+<!-- <textarea rows="6" [(ngModel)]="enteredvalue"> </textarea>
+<hr>
+<button (click)="onaddpost()" >submit</button>
+<p>{{newpost}}</p>
+<hr> -->
+
+<!-- <h2 [ngIf]=" color=='red'">welcome to nihira tech</h2> -->
+<!-- 
+<ng-template [ngIf]="color == 'blue'">
+
+    <p style="color: blue;">blue</p>
+</ng-template>
+
+<ng-template [ngIf]="color == 'red'">
+
+    <p style="color: red;">red</p>
+</ng-template>
+<ng-template [ngIf]="color == 'green'">
+
+    <p style="color: green;">Green</p>
+</ng-template> -->
+
+<!-- <div [ngSwitch]="color">
+    <p *ngSwitchCase='"blue"' style="color: blue;">blue</p>
+    <p *ngSwitchCase='"red"' style="color: red;">red</p>
+    <p  *ngSwitchCase='"green"' style="color: green;">green</p>
+    <p *ngSwitchDefault >default</p>
+
+
+</div> -->
+
+<ul>
+    <li *ngFor="let item of userarray">{{item}}</li>
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <td>name</td>
+            <td>salary</td>
+            <td>location</td>
+            <td>skillset</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userlist">
+            <td>{{item.name}}</td>
+            <td>{{item.salary}}</td>
+            <td>{{item.location}}</td>
+            <ul>
+                <li *ngFor="let skills of item.skillset">
+                    {{skills}}
+                </li>
+            </ul>
+        </tr>
+    </tbody>
+
+</table>
